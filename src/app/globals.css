@@ -260,22 +260,24 @@ body {
 .intro-copy::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: 50%;
   top: -0.2rem;
   width: min(13rem, 42%);
   height: 2px;
-  background: linear-gradient(90deg, #22d3ee, rgba(190, 242, 100, 0.75), transparent);
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, transparent, #22d3ee, rgba(190, 242, 100, 0.75), transparent);
   box-shadow: 0 0 20px rgba(34, 211, 238, 0.35);
 }
 
 .intro-copy::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 50%;
   bottom: -0.2rem;
   width: min(22rem, 70%);
   height: 1px;
-  background: linear-gradient(90deg, rgba(217, 70, 239, 0.75), rgba(34, 211, 238, 0.55), transparent);
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, transparent, rgba(217, 70, 239, 0.75), rgba(34, 211, 238, 0.55), transparent);
 }
 
 .primary-action,

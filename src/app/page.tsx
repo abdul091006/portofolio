@@ -408,11 +408,11 @@ export default async function Home() {
               />
             </div>
 
-            <div className="intro-copy text-left">
+            <div className="intro-copy text-center">
               <h2 className="text-4xl font-semibold leading-tight text-white md:text-5xl">
                 {profile.name}
               </h2>
-              <p className="mt-6 max-w-3xl text-base leading-8 text-slate-300 md:text-lg md:leading-9">
+              <p className="mx-auto mt-6 max-w-3xl text-justify text-base leading-8 text-slate-300 md:text-lg md:leading-9">
                 I am a results-driven Software Engineer with professional
                 experience in backend development, enterprise systems, and
                 custom web architectures. My work focuses on designing,
@@ -421,12 +421,12 @@ export default async function Home() {
                 while learning new business logic quickly and turning it into
                 reliable software.
               </p>
-              <div className="mt-6 grid gap-3 font-mono text-xs text-slate-300 sm:grid-cols-2">
-                <span className="inline-flex items-center gap-2 border border-cyan-300/20 bg-cyan-300/5 px-3 py-2">
+              <div className="mx-auto mt-6 grid max-w-3xl gap-3 font-mono text-xs text-slate-300 sm:grid-cols-2">
+                <span className="inline-flex items-center justify-center gap-2 border border-cyan-300/20 bg-cyan-300/5 px-3 py-2 text-center">
                   <MapPin className="size-4 text-cyan-200" aria-hidden="true" />
                   {profile.location}
                 </span>
-                <span className="inline-flex items-center gap-2 border border-cyan-300/20 bg-cyan-300/5 px-3 py-2">
+                <span className="inline-flex items-center justify-center gap-2 border border-cyan-300/20 bg-cyan-300/5 px-3 py-2 text-center">
                   <Phone className="size-4 text-cyan-200" aria-hidden="true" />
                   {profile.phone}
                 </span>
@@ -523,8 +523,8 @@ export default async function Home() {
         <div className="mx-auto max-w-7xl">
           <SectionHeading
             eyebrow="Work experience"
-            title="Enterprise software work, connected from internship to full-time role."
-            description="This section follows my CV: hands-on ERPNext and Frappe work, backend implementation, integrations, system customization, and maintainable enterprise workflows."
+            title="Work Experiences"
+            description="This section follows my hands-on backend projects, integrations, and maintainable enterprise workflows."
           />
 
           <div className="mt-10 space-y-6">
@@ -597,7 +597,7 @@ export default async function Home() {
           <SectionHeading
             eyebrow="Education & training"
             title="A vocational foundation reinforced by full-stack, AI, and IoT programs."
-            description="Formal and informal education from my CV, focused on information systems, application development, Python, Golang, Next.js, AI fundamentals, and practical project delivery."
+            description="Formal and informal education, focused on information systems, application development, Python, Golang, Next.js, and AI"
           />
 
           <div className="mt-10 grid gap-5 md:grid-cols-2">
@@ -652,7 +652,7 @@ export default async function Home() {
           <SectionHeading
             eyebrow="Certification"
             title="Verified learning milestones and competency proof."
-            description="Certificates extracted from my portfolio PDF, covering web development, cloud fundamentals, AI, machine learning, data visualization, Python, JavaScript, React, Golang, and full-stack training."
+            description="Certificates, covering web development, cloud fundamentals, AI, machine learning, data visualization, Python, JavaScript, React, Golang, and full-stack training."
           />
 
           <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
@@ -668,7 +668,6 @@ export default async function Home() {
                     alt={`${certification.title} certificate`}
                     fill
                     sizes="(min-width: 1280px) 31vw, (min-width: 768px) 47vw, 100vw"
-                    quality={82}
                     className="object-contain p-3"
                   />
                   <div className="cert-scanline" aria-hidden="true" />
@@ -712,7 +711,7 @@ export default async function Home() {
               A stack shaped by project work.
             </h2>
             <p className="mx-auto mt-4 text-base leading-7 text-slate-300">
-              Backend, enterprise ERP, headless CMS, frontend, database, and AI
+              Backend, ERP, headless CMS, frontend, database, and AI
               fundamentals that support practical software delivery.
             </p>
           </div>
