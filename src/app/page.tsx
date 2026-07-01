@@ -218,7 +218,7 @@ function SectionHeading({
       <h2 className="mt-3 text-3xl font-semibold leading-tight text-white md:text-4xl">
         {title}
       </h2>
-      <p className="mx-auto mt-4 text-base leading-7 text-slate-300">
+      <p className="mx-auto mt-4 text-justify text-base leading-7 text-slate-300">
         {description}
       </p>
     </div>
@@ -351,7 +351,7 @@ export default async function Home() {
               </span>
             </h1>
 
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-200 md:text-xl">
+            <p className="mx-auto mt-6 max-w-2xl text-justify text-lg leading-8 text-slate-200 md:text-xl">
               Results-driven Software Engineer specializing in backend
               development, enterprise systems, and custom web architectures with
               Frappe Framework, ERPNext, and modern headless stacks.
@@ -495,7 +495,7 @@ export default async function Home() {
                   <h3 className="text-2xl font-semibold leading-8 text-white">
                     {project.title}
                   </h3>
-                  <p className="mt-4 text-sm leading-6 text-slate-300">
+                  <p className="mt-4 text-justify text-sm leading-6 text-slate-300">
                     {project.description}
                   </p>
 
@@ -565,7 +565,9 @@ export default async function Home() {
                         <span>{item.period}</span>
                       </div>
 
-                      <p className="experience-summary">{item.summary}</p>
+                      <p className="experience-summary text-justify">
+                        {item.summary}
+                      </p>
 
                       <div className="experience-impact-grid">
                         {item.impact.map((impact) => (
@@ -627,7 +629,7 @@ export default async function Home() {
                 <h4 className="mt-4 text-lg font-semibold text-white">
                   {item.program}
                 </h4>
-                <p className="mt-3 text-sm leading-6 text-slate-300">
+                <p className="mt-3 text-justify text-sm leading-6 text-slate-300">
                   {item.summary}
                 </p>
 
@@ -710,7 +712,7 @@ export default async function Home() {
             <h2 className="text-3xl font-semibold leading-tight text-white md:text-4xl">
               A stack shaped by project work.
             </h2>
-            <p className="mx-auto mt-4 text-base leading-7 text-slate-300">
+            <p className="mx-auto mt-4 text-justify text-base leading-7 text-slate-300">
               Backend, ERP, headless CMS, frontend, database, and AI
               fundamentals that support practical software delivery.
             </p>
@@ -755,7 +757,7 @@ export default async function Home() {
               <h2 className="mt-3 text-3xl font-semibold leading-tight text-white md:text-4xl">
                 Let&apos;s build reliable software with clear business value.
               </h2>
-              <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-slate-300">
+              <p className="mx-auto mt-4 max-w-2xl text-justify text-base leading-7 text-slate-300">
                 I am open to software engineering opportunities, backend and
                 enterprise system work, custom web architectures, and practical
                 full-stack product development.
